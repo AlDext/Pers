@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Directory where your wallpapers live
+WALL_DIR="$HOME/Pictures/wallpapers"
+
+# Let wofi pick a file
+WALL=$(ls "$WALL_DIR" | wofi --dmenu | tail -n1)
+
+if [[ -n "$WALL" ]]; then
+  # Set the wallpaper with awww
+  awww img "$WALL_DIR/$WALL"
+fi
