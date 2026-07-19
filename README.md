@@ -1,2 +1,2 @@
 # Pers
-Linux lts configs
+basic and stolen hyprland configs
